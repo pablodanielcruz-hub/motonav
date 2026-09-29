@@ -1,0 +1,12 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#000"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css"><title>MotoNav</title>
+</head><body>
+<section id="home"><div class="logo">⌁</div><h1>MotoNav</h1><p>Tu ruta en la pantalla</p>
+<input id="dest" placeholder="¿A dónde vamos?" autocomplete="off">
+<button id="start">Iniciar navegación <b>→</b></button><button id="compass">Modo brújula</button><div id="status"></div></section>
+<section id="nav" class="hidden"><canvas id="c"></canvas><header><i id="dot"></i><span id="gps">GPS</span><button id="exit">×</button></header>
+<div id="maneuver"><span id="mi">↑</span><div><strong id="dist">—</strong><small id="inst">Esperando GPS…</small></div></div>
+<div id="stats"><div><b id="speed">0</b><small>km/h</small></div><div><b id="remain">—</b><small>restantes</small></div></div>
+<div id="recalc" class="hidden">Recalculando…</div></section>
+<script src="app.js"></script></body></html>
